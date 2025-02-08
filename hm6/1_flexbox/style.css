@@ -1,0 +1,27 @@
+.flexbox {
+    background-color: orange;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.flex_item {
+    width: 25%;
+    height: 400px;
+}
+
+.a {
+    background-color: red;
+}
+
+.b {
+    background-color: darkgreen;
+}
+
+.c {
+    background-color: aqua;
+}
+
+.d {
+    background-color: black;
+}
