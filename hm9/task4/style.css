@@ -1,0 +1,193 @@
+#form {
+    width: 80%;
+    border: 2px solid rgb(26, 68, 4);
+    margin: 30px auto;
+    padding: 30px 30px;
+    background-color: rgb(177, 222, 114);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+p {
+    font-size: 1rem;
+    font-style: italic;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.peop {
+    display: flex;
+}
+.sex label[for="sex"] {
+    margin-left: 20px;
+}
+h1 {
+    border-bottom: 4px solid rgb(26, 68, 4);
+    text-align: center;
+    font-size: 2rem;
+}
+label {
+    user-select: none;
+    font-size: 1rem;
+}
+.head {
+    margin: 10px 0;
+    text-align: center;
+}
+.cont {
+    margin: 10px 0;
+}
+.submit {
+    display: flex;
+    justify-content: center;
+}
+.submit input[type="submit"]{
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 13px;
+    border: none;
+    background-color: #0d4613;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.submit input[type="submit"]:hover {
+    background-color: #073404;
+    transform: scale(1.05);
+}
+ol {
+    margin-left: 30px;
+    font-size: 20px;
+    font-style: italic;
+}
+.comment {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 320px) and (max-width: 550px) {
+    #form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        display: none;
+    }
+    label {
+        font-size: 0.6rem;
+    }
+    .name {
+        display: grid;
+        grid-column: 1;
+    }
+    .cont {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20%;
+    }
+    #comment {
+        width: 100%;
+        height: 70px;
+    }
+    .peop {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 550px) and (max-width: 768px) {
+    #form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    label {
+        font-size: 0.7rem;
+    }
+    p {
+        display: none;
+    }
+    .name {
+        display: grid;
+        grid-column: 1;
+    }
+    .cont {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20%;
+    }
+    #comment {
+        width: 100%;
+        height: 80px;
+    }
+    .peop {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+    p, label {
+        font-size: 0.8rem;
+    }
+    .submit {
+        align-self: flex-end;
+    }
+    .comment{
+        align-self: stretch;
+    }
+    .comment label {
+        margin-left: 30px;
+    }
+     #comment {
+        width: 90%;
+        height: 100px;
+        align-self: center;
+     }
+}
+@media screen and (min-width: 991px) and (max-width: 1440px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+    p, label {
+        font-size: 0.9rem;
+    }
+    .submit {
+        align-self: flex-end;
+    }
+    .comment {
+        align-self: stretch;
+    }
+    .comment label {
+        margin-left: 110px;
+    }
+    #comment {
+        width: 70%;
+        height: 110px;
+        align-self: center;
+    }
+}
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .submit {
+        align-self: flex-end;
+    }
+    .comment {
+        align-self: stretch;
+    }
+    .comment label {
+        margin-left: 150px;
+    }
+    #comment {
+        width: 70%;
+        height: 130px;
+        align-self: center;
+    }
+}

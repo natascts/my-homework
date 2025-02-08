@@ -1,0 +1,50 @@
+#form_filter {
+    width: 600px;
+    border: 2px solid black;
+    margin: 30px auto;
+    padding: 30px 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: whitesmoke;
+    display: grid;
+}
+label {
+    user-select: none;
+}
+.type_product {
+    margin: 10px 30px;
+}
+.power {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+}
+.label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+}
+.sort {
+    margin: 10px 30px;
+}
+.name {
+    margin: 10px 30px;
+}
+.submit {
+    justify-self: center;
+    margin-top: 10px;
+}
+.submit input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #6357aa;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.submit input[type="submit"]:hover {
+    background-color: #492db0;
+    transform: scale(1.05);
+}
