@@ -1,0 +1,323 @@
+#box {
+    border: 3px solid red;
+    border-bottom: 0;
+    height: 900px;
+}
+div:first-child {
+    border: 1px solid black;
+}
+p[id] {
+    font-style: italic;
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+* p {
+    color: blue;
+}
+.up {
+    background-color: plum;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.p_up {
+    margin: 0 0;
+}
+.a, .b {
+    width: 80%;
+}
+.a {
+    background-color: white;
+    height: 150px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.a:active {
+    transform: skew(30deg, 10deg);
+}
+.b {
+    background-color: black;
+    height: 70px;
+    align-self: center;
+    transition: 1s;
+}
+.b:hover {
+    filter: blur(5px);
+}
+.pmenu {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.center:not(p) {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.center {
+    background-color: gray;
+    height: 200px;
+    text-align: center;
+}
+.menu {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+.items {
+    height: 160px;
+    width: 25%;
+}
+.a1~.items {
+    color: blue;
+} 
+.a1 {
+    background-color: red;
+    animation: flashA 1.5s infinite;
+}
+@keyframes flashA {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: red;
+    }
+}
+.b1 {
+    background-color: orange;
+    animation: flashB 1.5s infinite;
+}
+@keyframes flashB {
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: orange;
+    }
+}
+.c1 {
+    background-color: aqua;
+    animation: flashC 1.5s infinite;
+}
+@keyframes flashC {
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: aqua;
+    }
+}
+.d1 {
+    background-color: yellow;
+    animation: flashD 1.5s infinite;
+}
+@keyframes flashD{
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+.bottom {
+    display: flex;
+}
+.bot {
+    height: 450px;
+    width: 33.333%;
+}
+.left {
+    background-color: green;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.left:active {
+    filter: grayscale(90%);
+}
+.b_left {
+    text-align: center;
+    align-self: flex-start;
+}
+.a2 {
+    background-color: orange;
+    height: 370px;
+    width: 70%;
+    display: flex;
+    align-items: flex-end;
+    /* justify-content: center;  */
+}
+.a2:hover {
+    transform: rotate(0.5turn) translate(-100px, 30%);
+}
+.dd {
+    height: 300px;
+    width: 50%;
+}
+.b2 {
+    background-color: pink;
+}
+.c2 {
+    background-color: yellow;
+}
+.cent {
+    background-color: aqua;
+    display: flex;
+    align-items: flex-end;
+}
+.bc {
+    height: 370px;
+    width: 33.333%;
+}
+.a3 + .bc {
+    color: rgb(52, 50, 180);
+    font-size: 20px;
+}
+.a3 {
+    background-color: red;
+}
+.a3:active {
+    transform: scale(5, 2);
+    filter: drop-shadow(20px 20px 20px red);
+}
+.b3 {
+    background-color: yellow;
+    display: flex;
+    align-items: flex-end;
+}
+.d3:active {
+    transform: translate(-200px, -40%);
+    filter: hue-rotate(80deg);
+}
+.d3::after {
+    content: "@";
+}
+.d3 {
+    background-color: orange;
+    height: 310px;
+    width: 50%;
+}
+.e3:active {
+    transform: skew(25deg, 20deg);
+    filter: blur(5px);
+}
+.e3::before {
+    content: "!";
+}
+.e3 {
+    background-color: red;
+    height: 150px;
+    width: 50%;
+}
+.c3 {
+    background-color: orange;
+}
+.right {
+    background-color: blue;
+    display: flex;
+    align-items: flex-end;
+}
+.right div:nth-child(2n+1) {
+    color: green;
+}
+.a4 {
+    background-color: aqua;
+    height: 150px;
+    width: 33.333%;
+    animation: a4_Anim 5s infinite;
+}
+@keyframes a4_Anim {
+    0% {
+        transform: translate(0, 20%);
+        background-color: blue;
+    }
+    30% {
+        transform: translate(200px, 40%) rotate(0.1turn);
+        background-color: blueviolet;
+    }
+    60% {
+        transform: translate(-200px, -40%) rotate(00.5turn);
+        background-color: brown;
+    }
+    100% {
+        transform: translate(0, -20%);
+        background-color: yellowgreen;
+    }
+}
+.b4 {
+    background-color: yellow;
+    height: 190px;
+    width: 33.333%;
+    align-self: center;
+    margin-top: 150px;
+}
+.c4 {
+    background-color: orange;
+    height: 190px;
+    width: 33.333%;
+    align-self: flex-start;
+    margin-top: 130px;
+    display: flex;
+    color: rgb(171, 226, 52);
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}
+.c5 {
+    background-color: black;
+    align-self: flex-start;
+    width: 85%;
+    height: 30px;
+    margin-top: 130px;
+    animation: c5_Anim 3s infinite;
+}
+@keyframes c5_Anim {
+    10% {
+        transform: rotate(0.1turn);
+        color: violet;
+    }
+
+    30% {
+        transform: rotate(0.5turn);
+        color: aqua;
+    }
+    90% {
+        transform: scale(2, 2);
+        color: blue;
+    }
+}
+.c6 {
+    background-color: black;
+    align-self: flex-end;
+    width: 85%;
+    height: 30px;
+    margin-bottom: 110px;
+    animation: c6_Anim 3s infinite;
+}
+@keyframes c6_Anim {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(-100px, 0);
+        filter: blur(2px);
+    }
+
+    50% {
+        transform: translate(-100px, 100px);
+        filter: blur(5px);
+    }
+
+    75% {
+        transform: translate(0, 100px);
+        filter: blur(2px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

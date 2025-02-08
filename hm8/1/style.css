@@ -1,0 +1,252 @@
+h1 {
+    font-style: italic;
+}
+.ll {
+    font-size: 20px;
+    font-style: italic;
+    margin: 15px 15px;
+
+}
+.pos {
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px;
+    display: inline-block;
+}
+#stat {
+    font-style: italic;
+    color: aqua;
+}
+/* .sticky {
+    color: black;
+} */
+body .sticky {
+    color: black;
+}
+* .name {
+    color: brown;
+}
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.a, .b, .c, .d, .e {
+    margin: 5px 5px;
+}
+.b + .pos {
+    color: white;
+}
+.a {
+    background-color: aqua;
+    transition: 1s;
+}
+.a:hover {
+    background-color: blueviolet;
+    transform: rotate(.5turn);
+}
+.b {
+    background-color: red;
+    transition: 1.5s;
+}
+.b:hover {
+    transform: scale(2, 2);
+}
+.b:active {
+    background-color: blue;
+}
+.c {
+    background-color: black;
+    transition: 2s;
+}
+.c:hover {
+    transform: translate(150px, 70%);
+}
+.d {
+    background-color: violet;
+    transition: 1s;
+
+}
+.d:hover {
+    transform: skew(40deg, 30deg);
+}
+.e {
+    background-color: navy;
+    transition: 1s;
+}
+.e:hover {
+    transform: rotate(1turn) translate(150px, 60%) skew(30deg, 30deg);
+}
+.a1~.pos {
+    border: 1px solid black;
+}
+.a1 {
+    background-color: aqua;
+    position: absolute;
+    left: 35px;
+}
+.b1 {
+    background-color: red;
+}
+.c1 {
+    background-color: black;
+}
+.d1 {
+    background-color: violet;
+}
+.e1 {
+    background-color: navy;
+}
+.fixed > div {
+    color: blue;
+}
+h1[id="fix"] {
+    color: rebeccapurple;
+}
+h1[id] {
+    font-size: 25px;
+}
+.a2 {
+    background-color: aqua;
+}
+.absolute :not(h1) {
+    color: blueviolet;
+}
+.a2:active {
+    filter: blur(5px);
+}
+.b2 {
+    background-color: red;
+    position: fixed;
+    left: 80px;
+    bottom: 25px;
+}
+.b2:hover {
+    filter: grayscale(70%);
+}
+.c2 {
+    background-color: black;
+}
+.c2:active {
+    filter: drop-shadow(20px 30px 20px blue);
+}
+.d2 {
+    background-color: violet;
+}
+.d2:hover {
+    filter: hue-rotate(60deg);
+}
+.e2 {
+    background-color: navy;
+}
+.e2:hover {
+    filter: drop-shadow(20px 20px 10px green);
+}
+.relative h1 {
+    color: aqua;
+}
+.a3 {
+    background-color: aqua;
+}
+.b3 {
+    background-color: red;
+    position: relative;
+    right: 30px;
+    top: 20px;
+}
+.c3 {
+    background-color: black;
+}
+.d3 {
+    background-color: violet;
+}
+.e3 {
+    background-color: navy;
+}
+.a4 {
+    background-color: aqua;
+    position: sticky;
+    top: 300px;
+    right: 45px;
+    animation: firstA 3s;
+}
+@keyframes firstA {
+    from {
+        transform: rotate(.1turn);
+    }
+    to {
+        transform: rotate(.5turn);
+    }
+}
+.b4 {
+    background-color: lawngreen;
+    animation: secondA 2s infinite;
+}
+@keyframes secondA {
+    0% {
+        transform: translate(5px, 5%);
+    }
+    10% {
+        transform: translate(10px, 10%);
+        filter: blur(1px);
+    }
+    30% {
+        transform: translate(30px, 30%);
+        filter: blur(5px);
+    }
+    60% {
+        transform: translate(50px, 35%);
+        filter: blur(1px);
+    }
+    100% {
+        transform: translate(60px, 45%);
+    }
+}
+.c4 {
+    background-color: black;
+    animation: thirdA 3s;
+}
+@keyframes thirdA {
+    from {
+        transform: skew(10deg, 5deg);
+    }
+    to {
+        transform: skew(50deg, 25deg);
+    }
+}
+.d4 {
+    background-color: violet;
+    animation: fourthA 2s infinite;
+}
+@keyframes fourthA {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: blueviolet;
+    }
+}
+.e4 {
+    background-color: navy;
+    animation: fifthA 3s infinite;
+}
+@keyframes fifthA {
+    0% {
+        background-color: navy;
+        transform: translate(0, 0);
+    }
+    25% {
+        background-color: firebrick;
+        transform: translate(0, 20%);
+    }
+    40% {
+        background-color: blueviolet;
+        transform: translate(20px, 20%);
+    }
+    70% {
+        background-color: yellow;
+        transform: translate(20px, -20%);
+    }
+    100% {
+        background-color:navy;
+        transform: translate(-20x, -20%);
+    }
+}
