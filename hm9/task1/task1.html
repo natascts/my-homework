@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="form">
+      <div class="name">
+        <label for="first_name">Ім'я</label>
+        <input
+          name="first_name"
+          id="first_name"
+          type="text"
+          placeholder="Ім'я"
+          minlength="3"
+          maxlength="13"
+        />
+        <label for="last_name">Прізвище</label>
+        <input
+          name="last_name"
+          id="last_name"
+          type="text"
+          placeholder="Прізвище"
+          minlength="3"
+          maxlength="13"
+        />
+      </div>
+      <div class="password">
+        <label for="password">Введіть пароль:</label>
+        <input
+          name="password"
+          id="password"
+          type="password"
+          placeholder="Введіть пароль"
+        />
+      </div>
+      <div class="rpass">
+        <label for="rpass">Повторіть пароль:</label>
+        <input
+          name="rpass"
+          id="rpass"
+          type="password"
+          placeholder="Повторіть пароль"
+        />
+      </div>
+      <div class="date_birth">
+        <label for="date_birth">Введіть дату народження:</label>
+        <input name="date_birth" id="date_birth" type="date" />
+      </div>
+      <div class="sex">
+        <label for="sex">Ваша стать:</label>
+        <input type="radio" id="man" name="sex" />
+        <label for="sex">Чоловік</label>
+        <input type="radio" id="female" name="sex" />
+        <label for="sex">Жінка</label>
+        <input type="radio" id="another" name="sex" />
+        <label for="sex">Інше</label>
+      </div>
+      <div class="years_old">
+        <label for="years_old">Скільки Вам років?</label>
+        <input
+          type="text"
+          name="years_old"
+          id="years_old"
+          placeholder="Вік"
+          minlength="1"
+          maxlength="3"
+        />
+      </div>
+      <div class="about">
+        <label for="about">Розкажіть про себе:</label>
+        <textarea
+          class="text"
+          name="about"
+          id="about"
+          cols="30"
+          rows="10"
+          placeholder="Розкажіть про себе"
+        ></textarea>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Зареєструватися" />
+      </div>
+      <div class="button">
+        <a href="../task2/task2.html">
+          <input type="button" value="Перейти на  форму-фільтер" />
+        </a>
+      </div>
+    </form>
+  </body>
+</html>

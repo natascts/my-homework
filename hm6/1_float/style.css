@@ -1,0 +1,27 @@
+.box {
+    background-color: orange;
+    width: 900px;
+    height: 500px;
+}
+.item {
+    width: 25%;
+    height: 65%;
+    margin-top: 87.5px;
+    margin-bottom: 87.5px;
+}
+.a {
+    background-color: red;
+    float: left;
+}
+.b {
+    background-color: darkgreen;
+    float: left;
+}
+.c {
+    background-color: aqua;
+    float: left;
+}
+.d {
+    background-color: black;
+    float: left;
+}

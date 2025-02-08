@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="form_filter">
+      <div class="type_product">
+        <label for="type_product">Оберіть тип продукту:</label>
+        <select name="type_product" id="type_product">
+          <option value="phone">Телефон</option>
+          <option value="laptop">Ноутбук</option>
+          <option value="vacuum">Пилесос</option>
+          <option value="charge">Зарядка</option>
+        </select>
+      </div>
+      <div class="power">
+        <label for="power">Оберіть потужність пристрою:</label>
+        <div class="power_st">
+          <input type="checkbox" id="a" /> <label for="a">15w</label>
+          <input type="checkbox" id="b" /> <label for="b">25w</label>
+          <input type="checkbox" id="c" /> <label for="c">65w</label>
+          <input type="checkbox" id="d" /> <label for="d">100w</label>
+          <input type="checkbox" id="e" /> <label for="e">200w</label>
+        </div>
+      </div>
+      <div class="label">
+        <label for="label">Оберіть марку пристрою:</label>
+        <div class="label_st">
+          <input type="checkbox" id="samsung" />
+          <label for="samsung">Samsung</label>
+          <input type="checkbox" id="lg" /> <label for="lg">LG</label>
+          <input type="checkbox" id="asus" /> <label for="asus">Asus</label>
+          <input type="checkbox" id="lenovo" />
+          <label for="lenovo">Lenovo</label>
+        </div>
+      </div>
+      <div class="sort">
+        <label for="sort">Сортувати:</label>
+        <select name="sort" id="sort">
+          <option value="cheap">Від дешевих</option>
+          <option value="expensive">Від дорогих</option>
+          <option value="by_rating">По рейтингу</option>
+        </select>
+      </div>
+      <div class="name">
+        <label for="name">Назва моделі:</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div class="submit">
+        <input type="submit" value="Підтвердити" />
+      </div>
+    </form>
+  </body>
+</html>

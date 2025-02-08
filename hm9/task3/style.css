@@ -1,0 +1,81 @@
+#iFrame {
+    width: 700px;
+    border: 2px solid black;
+    margin: 30px auto;
+    padding: 30px 30px;
+    background-color: rgb(167, 157, 173);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+label {
+    user-select: none;
+}
+iframe {
+    width: 100%;
+    height: 415px;
+    margin: 0;
+}
+.iFr {
+    display: flex;
+    flex-direction: column;
+}
+.head {
+    align-self: center;
+}
+p {
+    font-size: 18px;
+    margin-left: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.contacts {
+    display: flex;
+}
+h2 {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.p_h2 {
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+.email {
+    margin-left: 30px;
+}
+.email input[type="submit"] {
+    margin-top: 10px;
+    margin-left: 100px;
+    padding: 5px 15px;
+    font-size: 12px;
+    border: none;
+    background-color: #6357aa;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.email input[type="submit"]:hover {
+    background-color: #492db0;
+    transform: scale(1.05);
+}
+.number input[type="submit"] {
+    margin-top: 10px;
+    margin-left: 100px;
+    padding: 5px 15px;
+    font-size: 12px;
+    border: none;
+    background-color: #6357aa;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.number input[type="submit"]:hover {
+    background-color: #492db0;
+    transform: scale(1.05);
+}
+
+

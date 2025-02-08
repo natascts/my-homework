@@ -1,0 +1,29 @@
+    table {
+        border-collapse: collapse;
+        border-width: 3px;
+        border-color: beige;
+        font-size: 15px;
+        font-style: italic;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    .a {
+        color: blueviolet;
+        background-color: beige;
+        font-size: 17px;
+        font-style: italic;
+        border: double 3px darkmagenta;
+        margin: 10px 15px 15px 15px;
+        padding: 5px 5px 5px 5px;
+    }
+    .b {
+        color: blue;
+        background-color: azure;
+        font-size: 15px;
+        border: dotted 3px darkblue;
+        list-style-type: circle;
+        margin: 10px 15px 10px 15px;
+        padding: 7px 7px 7px 5px;
+    }
+    

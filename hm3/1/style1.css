@@ -1,0 +1,19 @@
+div {
+    color: blueviolet;
+    font-size: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.relPath {
+    color: blue;
+    background-color: beige;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+#absPath{
+    color: aqua;
+    background-color: beige;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}

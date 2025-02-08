@@ -1,0 +1,21 @@
+.box {
+    display: grid;
+    background-color: orange;
+    /* grid-template-columns: auto; */
+    grid-template-rows: 75px 350px 75px;
+}
+.item {
+    grid-row: 2;
+}
+.a {
+    background-color: red;
+}
+.b {
+    background-color: darkgreen;
+}
+.c {
+    background-color: blue;
+}
+.d {
+    background-color: black;
+}
