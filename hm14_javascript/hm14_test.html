@@ -1,0 +1,63 @@
+<!-- Взявши за основу файл, який ми створили та разробляли під час уроку (з гіта, автоматичне тестування Mocha,Chai.html). 
+ Видаліть попередній функціонал та тести, та залишіть частину з підключенням бібліотек. Зробіть все одним файлом для зручності.
+ Треба перевірити функцію додавання двох чисел. Треба написати наступні тести:
+ 1. повинна правильно складати два числа
+ 2. повинна працювати з негативними числами
+ 3. повинна повертати число 
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- додаємо css стилі для mocha, щоб вивести результати -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css"
+    />
+    <!-- додаємо фреймворк mocha до коду -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script>
+      mocha.setup("bdd"); // вмикаємо тестування у bdd стилі
+    </script>
+    <!-- додаємо chai -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+      // chai має багато всього, давайте зробимо assert глобальним
+      let assert = chai.assert;
+    </script>
+  </head>
+
+  <body>
+    <script>
+      function sum(x,y){
+        let result = Number(x)+Number(y);
+        return result;
+      }
+    </script>
+
+    <!-- скрипт з тестами (describe, it...) -->
+    <!-- <script src="test.js"></script> -->
+    <script>
+      //test
+        describe("sum", function(){
+            it("правильно складає два числа", function(){
+                assert.equal(sum(2,4), 6);
+            });
+            it("працює з негативними числами", function(){
+                assert.equal(sum(-2,4), 2);
+            })
+            it("повертає число", function(){
+                assert.isNumber(sum(-2,43));
+            })
+        })
+    </script>
+
+    <!-- елемент з id="mocha" буде містити результати тестів -->
+    <div id="mocha"></div>
+
+    <!-- запускаємо тести! -->
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
