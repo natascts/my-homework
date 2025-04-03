@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Додайте нову опцію до елемента `<select>` -->
+    <!-- Маємо <select>: -->
+
+    <select id="genres">
+      <option value="rock">Рок</option>
+      <option value="blues" selected>Блюз</option>
+    </select>
+    <script>
+      let genres = document.getElementById("genres");
+      let bluesIndex = genres.selectedIndex;
+      let bluesValue = genres.options[bluesIndex];
+      console.log(bluesValue.value, bluesValue.text);
+      let option = new Option("Класика", "classic", true);
+      genres.add(option);
+    </script>
+    <!-- Використовуючи JavaScript:
+    
+    Виведіть значення та текст обраної опції.
+    Додайте опцію: <option value="classic">Класика</option>.
+    Зробіть її обраною.
+    Зверніть увагу: якщо ви все зробили правильно, то ваше сповіщення має показати значення blues. -->
+  </body>
+</html>
