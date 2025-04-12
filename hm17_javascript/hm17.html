@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ****************************************Фокусування: focus/blur -->
+
+    <!-- div, який можна відредагувати
+Створіть <div>, який при кліканні на ньому, перетворюється на <textarea>.
+
+Текстова область дозволяє редагувати HTML всередині <div>.
+
+Коли користувач натискає Enter або <textarea> втрачає фокус, тоді знову з’являється <div>, який містить в собі HTML введений в <textarea>. -->
+
+    <!-- ОПИС ЯК РОБИЛИ: -->
+
+    <!-- Кістяк програми -->
+    <ul>
+      <li>Клікніть на div щоб відредагувати.</li>
+      <li>Натискання Enter або втрата фокусу збереже вміст поля введення.</li>
+    </ul>
+
+    <div id="view" class="view">Текст</div>
+
+    <script>
+      let area = null;
+      let view = document.getElementById("view");
+
+      view.onclick = function () {
+        editStart();
+      };
+
+      function editStart() {
+        area = document.createElement("textarea");
+        area.value = view.textContent;
+        view.parentNode.replaceChild(area, view);
+        area.focus;
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Enter") {
+            editEnd();
+          }
+        });
+        area.addEventListener("blur", function () {
+          editEnd();
+        });
+      }
+
+      function editEnd() {
+        let newView = document.createElement("div");
+        newView.textContent = area.value;
+        area.parentNode.replaceChild(newView, area);
+      }
+    </script>
+
+    <!--Опис функцій коду для редагування тексту в <div>
+1.	Обробник кліку на <div>
+  o	Коли користувач клікає на елемент, потрібно запустити функцію редагування.
+  o	Використовується подія onclick, яка викликає функцію для початку редагування.
+2.	Функція для запуску редагування (editStart)
+  o	Створюється елемент <textarea>, який замінює початковий <div>.
+  o	У це поле вставляється поточний текст із <div>.
+  o	Додається обробник подій для натискання клавіші Enter, який зберігає текст.
+  o	Також додається обробник події втрати фокусу, який завершує редагування.
+  o	Після заміни фокус автоматично переходить у поле введення.
+3.	Функція завершення редагування (editEnd)
+  o	Береться значення з <textarea> і передається назад у <div>.
+  o	Поле <textarea> замінюється початковим <div>, але вже з оновленим текстом.
+ -->
+
+    <!-- ***************************************Вбудована валідація HTML5 -->
+    <!-- ``` --- ## Вправа 1: Валідація номера телефону ### Завдання Додайте у форму поле
+для введення номера телефону у форматі `+380XXXXXXXXX`. ### Рішення ```html -->
+    <!-- <form>
+    <label for="number">Номер телефону: </label><input type="tel" name="number" pattern="\+380\d{9}" required>
+    <button type="submit">Надіслати</button>
+    </form> -->
+
+    <!-- 
+``` --- ## Вправа 2: Валідація пароля ### Завдання Створіть поле пароля, яке
+приймає щонайменше 8 символів. ### Рішення ```html -->
+    <!-- 
+    <form>
+    <label for="password">Пароль: </label><input type="password" name="password" minlength="8" required>
+    <button type="submit">Надіслати</button>
+    </form> -->
+
+    <!-- ``` --- ## Вправа 3: Валідація URL ### Завдання Додайте у форму поле введення
+веб-сайту, яке перевіряє коректність URL. ### Рішення ```html -->
+    <!-- <form>
+    <label for="url">Веб-сайт: </label><input name="url" type="url" required>
+    <button type="submit">Надіслати</button>
+</form>
+  </body>
+</html> -->
+  </body>
+</html>
