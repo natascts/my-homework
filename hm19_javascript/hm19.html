@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Вправи з відповідями: Клієнтська валідація форми через JavaScript -->
+
+<!-- Вправа 1: Перевірка мінімальної довжини логіна Завдання: Реалізуйте перевірку,
+щоб логін містив щонайменше 5 символів. Рішення: -->
+
+<!-- <form id="loginForm">
+  <label for="login">Логін:</label>
+  <input type="text" id="login" />
+  <span id="loginError" style="color: red"></span>
+  <br />
+  <button type="submit">Надіслати</button>
+</form>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event){
+        let loginError = document.getElementById('loginError');
+        let login = document.querySelector('input').value;
+        if (login.length < 5){
+            loginError.textContent = "Логін повинен містити щонайменше 5 символів!";
+            event.preventDefault();
+        } else {
+            loginError.textContent = "";
+        }
+    })
+</script> -->
+
+<!-- Вправа 2: Перевірка, чи введене значення є числом Завдання: Поле введення віку
+повинно приймати тільки числові значення. Рішення: -->
+
+<!-- <form id="ageForm">
+  <label for="age">Вік:</label>
+  <input type="text" id="age" />
+  <span id="ageError" style="color: red"></span>
+  <br />
+  <button type="submit">Надіслати</button>
+</form>
+
+<script>
+    document.getElementById('ageForm').addEventListener('submit', function(event){
+        let age = document.getElementById('age').value;
+        let ageError = document.getElementById('ageError');
+        if(isNaN(age) || age.trim() === ""){
+            ageError.textContent = "Поле введення віку повинно приймати тільки числові значення!";
+            event.preventDefault();
+        } else {
+            ageError.textContent = "";
+        }
+    })
+</script> -->
+
+
+<!-- Вправа 3: Валідація форми перед надсиланням Завдання: Заборонити надсилання
+форми, якщо не заповнені всі поля. Рішення: -->
+
+<!-- <form id="formCheck">
+  <label for="email">Email:</label>
+  <input type="email" id="email" />
+  <br />
+  <label for="password">Пароль:</label>
+  <input type="password" id="password" />
+  <br />
+  <button type="submit">Надіслати</button>
+</form>
+
+<script>
+    document.getElementById('formCheck').addEventListener('submit', function(event){
+        let email = document.getElementById('email').value;
+        let password = document.getElementById('password').value;
+        if (email.trim() === "" || password.trim() === ""){
+            alert("Не заповнені всі поля!")
+            event.preventDefault();
+        }
+    })
+</script> -->
+
+<!-- # Вправи з теми Constraint Validation API -->
+<!-- 
+``` --- ## Вправа 4: Встановлення кастомного повідомлення **Завдання:** Створи
+поле для введення пароля. Якщо користувач вводить менше 6 символів, встанови
+власне повідомлення про помилку. **Рішення:** ```html (setCustomValidity) -->
+
+<!-- <form id="exercise2">
+  <input type="password" id="password" required />
+  <button type="submit">Перевірити</button>
+</form>
+
+<script>
+    let password = document.getElementById('password');
+    password.addEventListener('input', function(){
+        if(password.value.length < 6){
+            password.setCustomValidity("Пароль повинен містити щонайменше 6 символів!");
+        } else {
+            password.setCustomValidity("");
+        }
+    })
+</script> -->
+
+<!-- ``` --- ## Вправа 5: Використання `reportValidity()` **Завдання:** Створи поле
+введення номера телефону (type="tel"). Додай кнопку, яка при натисканні
+викликатиме `reportValidity()`. **Рішення:** ```html -->
+
+<!-- <form id="exercise3">
+  <input type="tel" id="phone" pattern="\d{10}" required />
+  <button type="button" id="validate">Перевірити</button>
+</form>
+
+<script>
+    document.getElementById('validate').addEventListener('click', function(){
+        let phone = document.getElementById('phone');
+        phone.reportValidity();
+    })
+</script> -->
+
+<!-- ``` --- ## Вправа 6: Валідація email-адреси з `validity.typeMismatch`
+**Завдання:** Створи поле для введення email-адреси. Якщо введене значення не
+відповідає формату email, виведи сповіщення. **Рішення:** ```html -->
+
+<!-- <form id="exercise5">
+  <input type="email" id="email" required />
+  <button type="button" id="validate">Перевірити</button>
+</form>
+
+<script>
+    document.getElementById('validate').addEventListener('click', function(){
+        let email = document.getElementById('email');
+        if(email.validity.typeMismatch){
+            email.reportValidity();
+        } 
+    }
+    )
+</script> -->
+
+</body>
+</html>
