@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Завдання 1. Лічильник кліків у sessionStorage
+Створіть кнопку. Кожне натискання збільшує лічильник, який зберігається в sessionStorage. Після перезавантаження вкладки лічильник має зберігатися, а після закриття вкладки — обнулятись. -->
+
+<!-- <button id="clickCounter">Натисни на мене</button>
+<script>
+    let count = 0;
+    count = Number(sessionStorage.getItem("clickCounter"));
+    document.getElementById("clickCounter").addEventListener("click", () => {
+        count++;
+        sessionStorage.setItem("clickCounter", count);
+        console.log(count);
+    })
+</script> -->
+
+<!-- Завдання 2. Очистити localStorage
+Створи кнопку, яка очищає всі дані в localStorage і оновлює інтерфейс. ( location.reload(); // оновити сторінку) -->
+
+<!-- <button id="clearData">Очистити дані</button>;
+<script>
+    document.getElementById("clearData").addEventListener("click", () => {
+        localStorage.clear();
+        location.reload();
+    })
+</script> -->
+
+<!-- Завдання 3. Робота з об'єктами
+Збережіть об'єкт користувача {name: "Olga", age: 25} у localStorage. Потім прочитайте його і виведіть в консоль у вигляді об'єкта. -->
+
+<!-- <script>
+    let user = {name: "Olga", age: 25}
+    localStorage.setItem("user", JSON.stringify(user));
+    console.log(JSON.parse(localStorage.getItem("user")));
+</script> -->
+
+</body>
+</html>
